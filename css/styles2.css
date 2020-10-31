@@ -1,0 +1,17 @@
+.jumbotron{
+    border: 10px solid green;
+}
+
+.container {
+    border: 10px solid red;
+}
+
+.row {
+    border: 10px solid black;
+}
+.col-12{
+    border: 10px solid chartreuse;
+}
+.col-sm-6 {
+    border: 10px solid chocolate;
+}

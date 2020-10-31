@@ -4,57 +4,91 @@
 <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <!-- -->
+    <!-- to make the web page responsive according to the size of the screen size-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
 
-    <header>
-        <div>
-            <div>
-                <div>
+    <!-- adding jumbotron-->
+    <header class="jumbotron">
+        <!-- adding container class to constraint the content-->
+        <div class="container">
+            <!-- row 1 in header-->
+            <div class="row row-header">
+                <!-- col-12 content will cover the entire row for extra small screen sizes-->
+                <!-- col-sm-6 content will cover half the row in small to extra large screen sizes-->
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1> 
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div>
+                <!-- col-12 content will cover the entire row for extra small screen sizes, it will be stacked below the above div tag-->
+                <!-- col-sm for small to extra large screen sizes this will cover the left over space in row-->
+                <div class="col-12 col-sm">
                 </div>
             </div>
         </div>
     </header>
 
-    <div>
-        <div>
-            <div>
+    <!-- all content is in this container-->
+    <div class="container">
+        <!-- dividing the container in rows row 1-->
+        <div class="row row-content align-items-center">
+            <!-- col-12 content will cover the entire row for extra small screen sizes-->
+            <!-- col-sm-4 content will cover 4 columns in the small screen sizes-->
+            <!-- col-md-3 cover 3 columns from small to extra large screen sizes-->
+            <!-- order-sm-last it will pulled to the right side of the screen-->
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div>
+            <!-- col this will stacked below the content in extra small screen sizes-->
+            <!-- col-sm this will cover remaining 8 columns in the small screen sizes-->
+            <!-- order-sm-first it will pulled to the left side of the screen-->
+            <!-- col-md this will cover the remaining 9 columns in medium to extra large screen sizes-->
+            <div class="col col-sm order-sm-first col-md">
                 <h2>Uthappizza</h2>
                 <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
             </div>
         </div>
 
-
-        <div>
-            <div>
+        <!-- dividing the container in rows row 2-->
+        <div class="row row-content align-items-center">
+            <!-- col-12 content will cover the entire row for extra small screen sizes-->
+            <!-- col-sm-4 content will cover 4 columns in the small screen sizes-->
+            <!-- col-md-3 cover 3 columns from small to extra large screen sizes-->
+            <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div>
+            <!-- col this will stacked below the content in extra small screen sizes-->
+            <!-- col-sm this will cover remaining 8 columns in the small screen sizes-->
+            <!-- col-md this will cover the remaining 9 columns in medium to extra large screen sizes-->
+            <div class="col col-sm col-md">
                 <h2>Weekend Grand Buffet</h2>
                 <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
             </div>
         </div>
 
-        <div>
-            <div>
+        <!-- dividing the container in rows row 3-->
+        <div class="row row-content align-items-center">
+            <!-- col-12 content will cover the entire row for extra small screen sizes-->
+            <!-- col-sm-4 content will cover 4 columns in the small screen sizes-->
+            <!-- col-md-3 cover 3 columns from small to extra large screen sizes-->
+            <!-- order-sm-last it will pulled to the right side of the screen-->
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-            <div>
+            <!-- col this will stacked below the content in extra small screen sizes-->
+            <!-- col-sm this will cover remaining 8 columns in the small screen sizes-->
+            <!-- order-sm-first it will pulled to the left side of the screen-->
+            <!-- col-md this will cover the remaining 9 columns in medium to extra large screen sizes-->
+            <div class="col col-sm order-sm-first col-md">
                 <h2>Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
                 <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
@@ -62,19 +96,27 @@
         </div>
     </div>
 
-    <footer>
-        <div>
-            <div>             
-                <div>
+    <footer class="footer">
+        <!-- to constraint the content-->
+        <div class="container">
+            <!-- row 1 in footer-->
+            <div class="row">   
+                <!-- col-4 content will cover the 4 columns for extra small screen sizes-->
+                <!-- col-sm-2 content will cover 2 columns in the small screen sizes-->
+                <!-- this content will be pushed by 1 column-->
+                <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
-                    <ul>
+                    <!-- this will remove the bullets infront of the links-->
+                    <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div>
+                <!-- col-7 content will cover the 7 columns for extra small screen sizes-->
+                <!-- col-sm-5 content will cover 5 columns in the small screen sizes-->
+                <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
 		              121, Clear Water Bay Road<br>
@@ -85,8 +127,10 @@
 		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
-                <div>
-                    <div>
+                <!-- col-12 content will cover the entire row for extra small screen sizes stacked below the content-->
+                <!-- col-sm-4 content will cover 4 columns in the small screen sizes-->
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
                         <a href="http://www.linkedin.com/in/">LinkedIn</a>
@@ -96,8 +140,10 @@
                     </div>
                 </div>
            </div>
-           <div>             
-                <div>
+           <!-- row 2 in footer-->
+           <div class="row justify-content-center">             
+               <!-- it will take space according to the content in it-->
+                <div class="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
            </div>
@@ -108,5 +154,4 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>
