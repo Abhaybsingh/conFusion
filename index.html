@@ -12,10 +12,35 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
+
+    <!-- navbar it will allow it to create a navigation bar-->
+    <!-- navbar-dark it is used to get a dark navigation bar-->
+    <!-- navbar-expand-sm navigation bar will collapse for small and extra small screen sizes-->
+    <!-- bg-primary the initial colour for the navigation bar-->
+    <!--fixed-top it fixes the navigation bar to the top-->
+    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+        <!--to constraint the content-->
+        <div class="container">
+            <!-- navbar-brand it will display the brand of the desired company--->
+            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+                <!-- navbar-nav helps to define links and display horizontaly-->
+                <!-- mr-auto the content will be pushed to the left side of the navigation bar-->>
+                <ul class="navbar-nav mr-auto">
+                    <!-- nav-item this allows the item to be shaown as links-->
+                    <!-- nav-link it will allow us to add href-->
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>            
+        </div>
+    </nav>
 
     <!-- adding jumbotron-->
     <header class="jumbotron">
@@ -122,21 +147,21 @@
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
 		              HONG KONG<br>
-		              Tel.: +852 1234 5678<br>
-		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+		              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
                 <!-- col-12 content will cover the entire row for extra small screen sizes stacked below the content-->
                 <!-- col-sm-4 content will cover 4 columns in the small screen sizes-->
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
-                        <a href="http://google.com/+">Google+</a>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                        <a href="http://twitter.com/">Twitter</a>
-                        <a href="http://youtube.com/">YouTube</a>
-                        <a href="mailto:">Mail</a>
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter"href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google"href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon"href="mailto:"><i class="fa fa-envelope fa-lg"></i></a>
                     </div>
                 </div>
            </div>
