@@ -27,18 +27,26 @@
     <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
         <!--to constraint the content-->
         <div class="container">
+            <!-- navbar-toggler -->
+            <!-- collapse it is a javascript component usgae to toggle on and off the links in the nav bar-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <!-- navbar-brand it will display the brand of the desired company--->
-            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>
+            <div class="collapse navbar-collapse" id="Navbar">
                 <!-- navbar-nav helps to define links and display horizontaly-->
                 <!-- mr-auto the content will be pushed to the left side of the navigation bar-->>
                 <ul class="navbar-nav mr-auto">
                     <!-- nav-item this allows the item to be shaown as links-->
                     <!-- nav-link it will allow us to add href-->
+                    <!-- active class is used to show the active page-->
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                </ul>            
+                </ul>    
+            </div>        
         </div>
     </nav>
 
@@ -134,7 +142,7 @@
                     <!-- this will remove the bullets infront of the links-->
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>

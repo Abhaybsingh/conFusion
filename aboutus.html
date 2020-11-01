@@ -21,17 +21,36 @@
 
 <body>
 
-    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+    <!-- navbar it will allow it to create a navigation bar-->
+    <!-- navbar-dark it is used to get a dark navigation bar-->
+    <!-- navbar-expand-sm navigation bar will collapse for small and extra small screen sizes-->
+    <!-- bg-primary the initial colour for the navigation bar-->
+    <!--fixed-top it fixes the navigation bar to the top-->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <!--to constraint the content-->
         <div class="container">
-           <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <!-- navbar-toggler -->
+            <!-- collapse it is a javascript component usgae to toggle on and off the links in the nav bar-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar-brand it will display the brand of the desired company--->
+            <a class="navbar-brand mr-auto" href="./index.html">Ristorante Con Fusion</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <!-- navbar-nav helps to define links and display horizontaly-->
+                <!-- mr-auto the content will be pushed to the left side of the navigation bar-->>
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <!-- nav-item this allows the item to be shaown as links-->
+                    <!-- nav-link it will allow us to add href-->
+                    <!-- active class is used to show the active page-->
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                </ul>            
+                </ul>    
+            </div>        
         </div>
-    </nav>
+    </nav></nav>
 
     <header class="jumbotron">
         <div class="container">
@@ -48,6 +67,10 @@
 
     <div class="container">
         <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">About us</li>
+            </ol>
             <div class="col-12">
                <h3>About Us</h3>
                <hr>
@@ -86,7 +109,7 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
