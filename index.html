@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     
+    <!-- fa font-awesome icon-->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- bootstrap-social icon for media icons-->
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <title>Ristorante Con Fusion</title>
 </head>
@@ -24,17 +26,20 @@
     <!-- navbar-dark it is used to get a dark navigation bar-->
     <!-- navbar-expand-sm navigation bar will collapse for small and extra small screen sizes-->
     <!-- bg-primary the initial colour for the navigation bar-->
-    <!--fixed-top it fixes the navigation bar to the top-->
+    <!-- fixed-top it fixes the navigation bar to the top-->
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <!--to constraint the content-->
         <div class="container">
             <!-- navbar-toggler -->
             <!-- collapse it is a javascript component usgae to toggle on and off the links in the nav bar-->
+            <!-- #Navbar taget of the button when the button is clicked-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <!-- nav-bar-icon it willadd the icon for the toggle button-->
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- navbar-brand it will display the brand of the desired company--->
             <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+            <!-- collapse - a javascript-->
             <div class="collapse navbar-collapse" id="Navbar">
                 <!-- navbar-nav helps to define links and display horizontaly-->
                 <!-- mr-auto the content will be pushed to the left side of the navigation bar-->>
@@ -42,6 +47,11 @@
                     <!-- nav-item this allows the item to be shaown as links-->
                     <!-- nav-link it will allow us to add href-->
                     <!-- active class is used to show the active page-->
+                    <!-- fa-home for the home icon-->
+                    <!-- fa-address-card for contact icon-->
+                    <!-- fa-info for info icon-->
+                    <!-- fa-list for menu icon-->
+                    <!-- fa-lg for larger icon-->
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
@@ -64,6 +74,7 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-auto align-self-center">
+                    <!-- img-fluid to image be reponsive-->
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 
@@ -97,9 +108,18 @@
             <!-- order-sm-first it will pulled to the left side of the screen-->
             <!-- col-md this will cover the remaining 9 columns in medium to extra large screen sizes-->
             <div class="col col-sm order-sm-first col-md">
+                <!-- media -->
                 <div class="media">
+                    <!-- d-flex-->
+                    <!-- mr-3 margin right number 3 so it give sufficient margin to the right of the image so that description os slightly set apart o fthe image-->
+                    <!-- img-thumbnail it will provide the a white border to the image-->
+                    <!-- align-self-center-->
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthsppizza">
+                    <!-- media-body-->
                     <div class="media-body">
+                        <!-- mt-0 margin top 0 so title willl be aligned to the top of the media object-->
+                        <!-- badge badge-danger this will add hot bagde with red color-->
+                        <!-- badge badge-pill badge-secondary this will add a grey color badge of the price-->
                         <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
@@ -118,24 +138,21 @@
             <!-- col this will stacked below the content in extra small screen sizes-->
             <!-- col-sm this will cover remaining 8 columns in the small screen sizes-->
             <!-- col-md this will cover the remaining 9 columns in medium to extra large screen sizes-->
-            <!--
             <div class="col col-sm col-md">
-                <div class="media flex-last">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
-                    <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
-                        <p  class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-                    </div>
-                </div>
-            </div>
-            -->
-            <div class="col col-sm col-md">
+                <!-- media -->
                 <div class="media">
+                    <!-- media-body-->
                     <div class="media-body">
+                        <!-- mt-0 margin top 0 so title willl be aligned to the top of the media object-->
+                        <!-- badge badge-danger this will add new badge with red color-->
                         <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger"> NEW </span> </h2>
                         <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
-                    <img class="d-flex mr-3 img-thumbnail align-self-center order-sm-last" src="img/buffet.png" alt="Buffet">
+                    <!-- d-flex-->
+                    <!-- ml-3 margin left number 3 so it give sufficient margin to the left of the image so that description os slightly set apart o fthe image-->
+                    <!-- img-thumbnail it will provide the a white border to the image-->
+                    <!-- align-self-center-->
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet">
                 </div>
             </div>
         </div>
@@ -154,9 +171,16 @@
             <!-- order-sm-first it will pulled to the left side of the screen-->
             <!-- col-md this will cover the remaining 9 columns in medium to extra large screen sizes-->
             <div class="col col-sm order-sm-first col-md">
+                <!-- media -->
                 <div class="media">
+                    <!-- d-flex-->
+                    <!-- mr-3 margin right number 3 so it give sufficient margin to the right of the image so that description os slightly set apart o fthe image-->
+                    <!-- img-thumbnail it will provide the a white border to the image-->
+                    <!-- align-self-center-->
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="alberto">
+                    <!-- media-body-->
                     <div class="media-body">
+                        <!-- mt-0 margin top 0 so title willl be aligned to the top of the media object-->
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
                         <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
@@ -164,6 +188,7 @@
                 </div>
             </div>
         </div>
+
 
         <div class="row row-content align-items-center">
             <div class="col-12 col-md-8 offset-sm-2">
@@ -210,6 +235,58 @@
                 </div>
              </div>
         </div>
+         
+        <!-- creatig a new row for the card-->
+        <!-- id="reservation for the button in the header"-->
+        <!-- -->
+        <!-- <div class="row row-content align-items-center"  id="reservation"> -->
+            <!-- col-12 from extra small to small screen it will occupy entire row-->
+            <!-- col-md-8 from medium to extra large screen it will occupy onlt 8 columns in the row-->
+            <!-- col-md-2 offset of 2 columns from medium to extra large-->
+            <!--
+            <div class="col-12 col-md-8 offset-md-2">
+                <div class="card">
+                    <h3 class="card-header text-white" style="background-color:#ffc107">Reserve a Table</h3>
+                    <div class="card-body">
+                        <div class="col-12 col-sm-12">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="number-of-guests" class="col-12 col-md-2 col-form-label"><strong>Number of Guests</strong></label>
+                                    <div class="col-md-10">
+                                        <div class="col-12 col-sm pb-3">
+                                            <label class="radio-inline"><input type="radio" name="optradio"><strong> 1</strong></label>
+                                            <label class="radio-inline"><input type="radio" name="optradio"><strong> 2</strong></label>
+                                            <label class="radio-inline"><input type="radio" name="optradio"><strong> 3</strong></label>
+                                            <label class="radio-inline"><input type="radio" name="optradio"><strong> 4</strong></label>
+                                            <label class="radio-inline"><input type="radio" name="optradio"><strong> 5</strong></label>
+                                            <label class="radio-inline"><input type="radio" name="optradio"><strong> 6</strong></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="date-and-time" class="col-12 col-sm-10 col-md-2 col-form-label"><strong>Date and Time</strong></label>
+                                    <div class="col col-sm-5">
+                                        <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                                    </div> 
+                                    <div class="col col-sm-5">
+                                        <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group row">
+                                    <div class="offset-md-2 col-md-10">
+                                        <button type="submit" class="btn btn-primary">
+                                            Reserve
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+             </div>
+        </div>
+        -->
     </div>
 
     <footer class="footer">
@@ -219,7 +296,7 @@
             <div class="row">   
                 <!-- col-4 content will cover the 4 columns for extra small screen sizes-->
                 <!-- col-sm-2 content will cover 2 columns in the small screen sizes-->
-                <!-- this content will be pushed by 1 column-->
+                <!-- offset-1  col-4 and col-7 is 11 column 1 is still remaining, so we offset this column this content will be pushed by 1 column-->
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <!-- this will remove the bullets infront of the links-->
@@ -237,7 +314,10 @@
                     <address>
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
+                      HONG KONG<br>
+                      <!-- fa-phone for phone icon-->
+                      <!-- fa-fax for fax icon-->
+                      <!-- fa-envelope for email icon-->
 		              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
 		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
 		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
@@ -247,6 +327,8 @@
                 <!-- col-sm-4 content will cover 4 columns in the small screen sizes-->
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
+                        <!-- social media icons-->
+                        <!-- btn-social-icon for the bootstrap social icon button-->
                         <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
                         <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
                         <a class="btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>

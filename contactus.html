@@ -79,7 +79,11 @@
                 <h5>Map of our Location</h5>
             </div>
             <div class="col-12 col-sm-11 offset-sm-1">
+                <!-- btn-group adding group of button-->
                 <div class="btn-group" role="group">
+                        <!-- btn-primary for blue colour fa-phone for call button-->
+                        <!-- btn-info for light blue color fa-skype for skype button-->
+                        <!-- btn-success for green color fa-envelope-o for mail button-->
                         <a role="button" class="btn btn-primary" href="tel:+85122345678"><i class="fa fa-phone"></i> Call</a>
                         <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
                         <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i> Email</a>
@@ -92,50 +96,82 @@
               <h3>Send us your Feedback</h3>
             </div>
             <div class="col-12 col-md-9">
+                <!-- adding form for feedback-->
                 <form>
+                    <!-- form-group row dividing the form into rows-->
                     <div class="form-group row">
+                        <!-- col-md-2 it will occupy 2 columns-->
+                        <!-- col-form-label to specify the label-->
                         <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                        <!-- col-md-10 it will occupy remaining 10 columns of the row-->
                         <div class="col-md-10">
+                            <!-- firstname id it matches the label-->
                             <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
                         </div>
                     </div>
+                    <!-- form-group row dividing the form into rows-->
                     <div class="form-group row">
+                        <!-- col-md-2 it will occupy 2 columns-->
+                        <!-- col-form-label to specify the label-->
                         <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                        <!-- col-md-10 it will occupy remaining 10 columns of the row-->
                         <div class="col-md-10">
+                            <!-- lastname id it matches the label-->
                             <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
                         </div>
                     </div>
 
+                    <!-- form-group row dividing the form into rows-->
                     <div class="form-group row">
+                        <!-- telnum-->
+                        <!-- col-12 label will occupy whole row in extra small screen sizes-->
+                        <!-- col-md-2 label will occupy only 2 columns from small to extra lareg screen sizes-->
+                        <!-- col-form-label to specify the label-->
                         <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
 
+                        <!-- col-5 for small to extra small screen it will occupy 5 columns of tehe row-->
+                        <!-- col-md-3 for medium to extra large screen it will occupy only 3 columns of the row-->
                         <div class="col-5 col-md-3">
-                            <input type="tel" class="form-control" id="areacode" name="firstname" placeholder="Area Code">
+                            <!-- tel-->
+                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area Code">
                         </div>
 
+                        <!-- col-7 from extra small to small it will occupy only 7 columns of the row-->
+                        <!-- col-md-7 from medium to extra large screen sizes it will occupy onlu 7 columns of the row-->
                         <div class="col-7 col-md-7">
                             <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. Number">
                         </div>
-
                     </div>
 
+                    <!-- form-group row dividing the form into rows-->
                     <div class="form-group row">
+                        <!-- col-md-2 from medium to extra large it will occupy 2 columns in the row-->
+                        <!-- col-form-label to specify the label-->
                         <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                        <!-- col-md-10 from medium to extra large  it will occupy remaining 10 columns of the row-->
                         <div class="col-md-10">
                             <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
                         </div>
                     </div>
 
-                    <div class="form-group row">
+                    <!-- form-group row dividing the form into rows-->
+                    <div class="form-group row">    
+                        <!-- col-md-6 from medium to extra large it will occupy only 6 column of the row-->
+                        <!-- offset-md-2 from medium to extra large it will move the checkbox right of the 2 column-->
                         <div class="col-md-6 offset-md-2">
+                            <!-- -->
                             <div class="form-check">
+                                <!-- form-check-input -->
                                 <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
-                                <label class="form-check-label" for="approve">
-                                    <strong>May we contact you?</strong>
-                                </label>
+                                <!-- col-form-label to specify the label-->
+                                <label class="form-check-label" for="approve"><strong>May we contact you?</strong></label>
                             </div>
                         </div>
+
+                        <!-- col-md-3 from medium to extra large it will occupy only remaining 3 column of the row-->
+                        <!-- offset-md-1 from medium to extra large it will move the checkbox right of the 1 column-->
                         <div class="col-md-3 offset-md-1">
+                            <!-- select will provide a drop down menu-->
                             <select class="form-control">
                                 <option>Tel.</option>
                                 <option>Email</option>
@@ -143,15 +179,24 @@
                         </div>
                     </div>
 
+                    <!-- form-group row dividing the form into rows-->
                     <div class="form-group row">
+                        <!-- col-md-2 from medium to extra large screen it will occupy 2 column of the row-->
+                        <!-- col-form-label to specify the label-->
                         <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                        <!-- col-md-10 it will take reminaing 10 columns of the row for textarera-->
                         <div class="col-md-10">
+                            <!-- row for the number of the rows in textarea-->
                             <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
                         </div>
                     </div>
 
+                    <!-- form-group row dividing the form into rows-->
                     <div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
+                        <!-- col-md-10 from medium to extra large it will occupy only10 column of the row-->
+                        <!-- offset-md-2 from medium to extra large it will move the checkbox right of the 2 column-->
+                        <div class="col-md-10 offset-md-2">
+                            <!-- btn-primary for blue color in the button-->
                             <button type="submit" class="btn btn-primary">
                                 Send Feedback
                             </button>
@@ -159,10 +204,11 @@
                     </div>
                 </form>
             </div>
-             <div class="col-12 col-md">
+
+            <div class="col-12 col-md">
+
             </div>
        </div>
-
     </div>
 
     <footer class="footer">
