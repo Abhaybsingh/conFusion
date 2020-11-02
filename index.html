@@ -56,10 +56,72 @@
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                </ul>    
+                </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <!-- fa-sign-in font awesome sign in icon -->
+                    <span class="fa fa-sign-in"></span>Login</a>
+                </span>
             </div>        
         </div>
     </nav>
+
+    <!--  bootstarp suggests to add all the modal related stuff to the top the page-->
+    <!-- modal -->
+    <!-- fade modal will fade in to the screen -->
+    <!-- dialog means it will displyed on topm of page -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <!-- modal-dialog modal will be centre aligned-->
+        <!-- modal-lg size of the modal will be large-->
+        <!-- content the content of the modal -->
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <!-- modal-header header o fthe modal -->
+                <div class="modal-header">
+                    <!-- modal-title title of the modal -->
+                    <h4 class="modal-title">Login </h4>
+                    <!-- close close x button on the right corner of the modal to close it -->
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- modal-body it will hold the modal content -->
+                <div class="modal-body">
+                    <!-- form for the sign in -->
+                    <form>
+                        <!-- form-row it creates the row in the form -->
+                        <div class="form-row">
+                            <!-- form-group it will create the group of the form -->
+                            <!-- col-sm-4 for small to extra large it will occupy 4 columns of the row -->
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <!-- form-group it will create the group of the form -->
+                            <!-- col-sm-4 for small to extra large it will occupy 4 columns of the row -->
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <!-- col-sm-auto it will allocate sufficient space for the label -->
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- form-row adding another row to the form -->
+                        <div class="form-row">
+                            <!-- cancel button -->
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <!-- submigt button -->
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- adding jumbotron-->
     <header class="jumbotron">
@@ -73,18 +135,22 @@
                     <h1>Ristorante con Fusion</h1> 
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-auto align-self-center">
+                <!-- <div class="col-auto align-self-center"> -->
+                <div class="col-12 col-sm align-self-center">
                     <!-- img-fluid to image be reponsive-->
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 
                 <!-- col-12 content will cover the entire row for extra small screen sizes, it will be stacked below the above div tag-->
                 <!-- col-sm for small to extra large screen sizes this will cover the left over space in row-->
-                <div class="col-12 col-sm">
-                </div> 
-
-                <div class="col align-self-center">
-                    <a  role="button" class="btn btn-sm btn-warning btn-block" id="reserve-button" href="#reservation">
+                <div class="col-12 col-sm align-self-center">
+                    <!-- <a  role="button" class="btn btn-sm btn-warning btn-block" id="reserve-button" href="#reservation"> -->
+                    <!-- tooltip-->
+                    <!-- data-html="true" of we apply this data html attribute that means the contenrt of the tooltip can be applied using html-->
+                    <!-- title in this the content of the tooltip will be enclosed -->
+                    <!-- data placement bottom that will place the tooltip to the bottom of the button -->
+                    <a  role="button" class="btn  btn-block nav-link btn-warning" 
+                        data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 123445678</strong>" data-placement="bottom" id="reserve-button" href="#reserveform">
                         Reserve Table
                     </a>
                 </div>
@@ -196,7 +262,7 @@
                     <h3 class="card-header text-white" style="background-color:#ffc107">Reserve a Table</h3>
                     <div class="card-body">
                         <div class="col-12 col-sm-12">
-                            <form id="reservation">
+                            <form id="reserveform">
                                 <div class="form-group row">
                                     <label for="number-of-guests" class="col-12 col-md-2 col-form-label">Number of Guests</label>
                                     <div class="col-md-10">
@@ -351,5 +417,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 </html>
