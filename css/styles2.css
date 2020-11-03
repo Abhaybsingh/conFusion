@@ -19,7 +19,7 @@
     border: 5px solid chocolate;
 }
 .col-md-6 {
-    border: 5px solid pink;
+    border: 5px solid blue;
 }
 .form-check {
     border: 5px solid cornflowerblue;
@@ -38,4 +38,7 @@
 }
 .col-2 {
     border: 5px solid darkgreen;
+}
+.col{
+    border: 5px solid deepskyblue;
 }
