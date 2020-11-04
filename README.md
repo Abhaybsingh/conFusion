@@ -9,3 +9,7 @@ git commit -m "first commit"
 git branch -M master
 git remote add origin https://github.com/Abhaybsingh/conFusion.git
 git push -u origin master
+
+
+//node-sass version 5.0.0
+npm install --save-dev node-sass@5.0.0
