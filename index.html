@@ -58,9 +58,12 @@
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul>
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
-                            <!-- fa-sign-in font awesome sign in icon -->
-                        <span class="fa fa-sign-in"></span>Login</a>
+                        <!-- <a data-toggle="modal" data-target="#loginModal"> -->
+                        <!-- week 4 task 3 -->
+                        <a id="login-Btn" role="button">
+                            <!-- fa-sign-in font awesome sign in icon-->
+                            <span class="fa fa-sign-in"></span>Login
+                        </a>
                     </span>
                 </div>        
             </div>
@@ -123,7 +126,7 @@
             </div>
         </div>
 
-        <div id="reserveform" class="modal fade" role="dialog">
+        <div id="reserveformModal" class="modal fade" role="dialog">
             <!-- modal-dialog modal will be centre aligned-->
             <!-- modal-lg size of the modal will be large-->
             <!-- content the content of the modal -->
@@ -144,7 +147,6 @@
                             <div class="form-group row">
                                 <label for="number-of-guests" class="col-12 col-md-2 col-form-label"><strong>Number of Guests</strong></label>
                                 <div class="col-md-10">
-
                                     <div class="col-12 col-sm pb-3">
                                         <label class="radio-inline"><input type="radio" name="optradio"><strong> 1&nbsp;&nbsp;&nbsp;</strong></label>
                                         <label class="radio-inline"><input type="radio" name="optradio"><strong> 2&nbsp;&nbsp;&nbsp;</strong></label>
@@ -155,10 +157,8 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="form-group row">
                                 <label for="section" class="col-2 col-md-2 col-form-label"><strong>Section</strong></label>
-            
                                 <!-- <div class="col"> -->
                                     <!-- btn-group adding group of button-->
                                     <!-- <div class="btn-group" role="group"> -->
@@ -168,7 +168,6 @@
                                             <a role="button" class="btn btn-danger">Smoking</a>
                                     </div>
                                 </div> -->
-
                                 <div class="col">
                                     <div class="btn-group" data-toggle="buttons">
                                         <label class="btn btn-success active">
@@ -200,8 +199,7 @@
                                     </button>
                                     <button type="submit" class="btn btn-primary">
                                         Reserve
-                                    </button>
-                                    
+                                    </button>     
                                 </div>
                             </div>
                         </form>
@@ -245,9 +243,14 @@
                             <a data-toggle="modal" data-target="#loginModal">
                             <span class="fa fa-sign-in"></span>Login</a>
                         </span> -->
-                        <a  role="button" class="btn  btn-block nav-link btn-warning" 
+                        <!-- <a  role="button" class="btn  btn-block nav-link btn-warning" 
                             data-toggle="modal" data-target="#reserveform"
                             id="reserve-button" href="#reserveform">
+                            Reserve Table
+                        </a> -->
+
+                        <!-- week 4 task 2 -->
+                        <a  role="button" class="btn btn-block nav-link btn-warning" id="reserve-button">
                             Reserve Table
                         </a>
                     </div>
@@ -279,24 +282,21 @@
                             </div>
 
                             <div class="carousel-item">
-                                <img class="d-block img-fluid"
-                                    src="img/buffet.png" alt="buffet">
+                                <img class="d-block img-fluid" src="img/buffet.png" alt="buffet">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h2>Weekend Grand Buffet <span class="badge badge-danger"> NEW </span> </h2>
+                                    <h2>Weekend Grand Buffet <span class="badge badge-danger"> NEW </span></h2>
                                     <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                                 </div>
                             </div>
 
                             <div class="carousel-item">
-                                <img class="d-block img-fluid"
-                                    src="img/alberto.png" alt="alberto">
+                                <img class="d-block img-fluid" src="img/alberto.png" alt="alberto">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h2>Alberto Somayya</h2>
                                     <h4>Executive Chef</h4>
                                     <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                                 </div>
                             </div>
-
                         </div>
 
                         <!-- carousel-iindicators it will be positioned on the carousel slides to indicate which slide is particularly shown -->
@@ -340,7 +340,6 @@
                             <!-- icon for pause button -->
                             <span id="carousel-button-icon" class="fa fa-pause"></span>
                         </button>
-
                     </div>
                 </div>
             </div>
@@ -644,6 +643,20 @@
                         $("#carouselButton").children("span").addClass('fa-pause');                    
                     }
                 });
+            });
+        </script>
+        <script>
+            //   Week4 Assignment Task2
+            //when reserve-button is clicked this function willbe called
+            $('#reserve-button').click(function (){
+                // reserveformModal will be displayed on the screen
+                $('#reserveformModal').modal('toggle');
+            });
+            //   Week4 Assignment Task3
+            //when login-Btn is clicked this function willbe called
+            $('#login-Btn').click(function (){
+                // loginModal will be displayed on the screen
+                $('#loginModal').modal('toggle');
             });
         </script>
     </body>
