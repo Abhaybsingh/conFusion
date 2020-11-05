@@ -29,3 +29,8 @@ npm install -g node-sass@5.0.0
 
 for Exxist error
 // delete node-modules files and run npm install
+
+Node Sass does not yet support your current environment: Windows 64-bit with false
+// npm rebuild -g node-sass
+or
+// npm uninstall node-sass && npm install node-sass (-g if applicable)
