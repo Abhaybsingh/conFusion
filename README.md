@@ -25,3 +25,7 @@ npm install -g gulp-cli
 
 //for node-sass
 npm install -g node-sass@5.0.0
+
+
+for EnNot error
+// delete node-modules files and run npm install
