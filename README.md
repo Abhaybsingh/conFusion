@@ -14,6 +14,8 @@ npm install node-sass -g
 npm install -g
 npm i graceful-fs
 npm install -g windows-build-tools
+or
+npm install --global --production windows-build-tools@4.0.0
 
 // after going inside node_modules folder
 npm install -g gulp-sass
