@@ -21,3 +21,7 @@ npm install --global --production windows-build-tools@4.0.0
 npm install -g gulp-sass
 npm install gulp-sass --save-dev
 npm install -g gulp-cli
+
+
+//for node-sass
+npm install -g node-sass@5.0.0
