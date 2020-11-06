@@ -30,6 +30,9 @@ npm install -g node-sass@5.0.0
 for Exxist error
 // delete node-modules files and run npm install
 
+//delete C:\Program Files\nodejs gulp file then run
+npm install -g gulp-cli
+
 Node Sass does not yet support your current environment: Windows 64-bit with false
 // npm rebuild -g node-sass
 or
